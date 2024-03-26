@@ -89,7 +89,7 @@ public class Game {
         return longDescription;
     }
 
-    public void setLongDescription(String longDescription) {
+    public void setLongDescription(String  longDescription) {
         this.longDescription = longDescription;
     }
 
