@@ -24,4 +24,5 @@ public class GameController {
     public GameDto findById(@PathVariable Long id){ // O corpo da requisição receberá um id!
         return gameService.findById(id); // Chama o método findById do gameService passando o id da requisição por parâmetro!
     }
+
 }
