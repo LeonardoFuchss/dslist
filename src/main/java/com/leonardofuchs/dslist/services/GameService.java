@@ -1,8 +1,10 @@
 package com.leonardofuchs.dslist.services;
 
 import com.leonardofuchs.dslist.dto.GameDto;
+import com.leonardofuchs.dslist.dto.GameListDTO;
 import com.leonardofuchs.dslist.dto.GameMinDto;
 import com.leonardofuchs.dslist.entities.Game;
+import com.leonardofuchs.dslist.entities.GameList;
 import com.leonardofuchs.dslist.repository.GameRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,4 +27,5 @@ public class GameService {
         Game result = gameRepository.findById(id).get(); // BUSCA NA ENTIDADE O ID DA REQUISIÇÃO! ARMAZENA NA VARIÁVEL RESULT!
         return new GameDto(result); // RETORNA OS DADOS DO DTO ATRAVÉS DO ID BUSCADO NO RESULT!
     }
+
 }
