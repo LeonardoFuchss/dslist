@@ -6,7 +6,7 @@ import jakarta.persistence.ManyToOne;
 
 import java.io.Serializable;
 import java.util.Objects;
-@Embeddable // Encapsulando 2 atributos em uma classe só.
+@Embeddable // Poderá ser incorporada em outras entidades
 public class BelongingPK implements Serializable {
     @ManyToOne // Anotação de muitos para um
     @JoinColumn(name = "game_id")

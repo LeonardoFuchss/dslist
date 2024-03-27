@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Table(name = "tb_belonging")
 public class Belonging implements Serializable {
     @EmbeddedId
-    private BelongingPK id = new BelongingPK();
+    private BelongingPK id = new BelongingPK(); // Instanciando o belongingPK como o id do belonging
     private Integer position;
 
     public Belonging() {
